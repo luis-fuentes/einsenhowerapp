@@ -1,6 +1,5 @@
-ionic-angular-cordova-seed
-==========================
+einsenhowerapp
+==============
 
-The perfect starting point for an Ionic project. :D
+To Do app based in Einsenhower Matrix for iOS/Android/FirefoxOS/Windows Phone
 
-- [Ionic Tutorials](http://ionicframework.com/tutorials/)
