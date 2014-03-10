@@ -2,6 +2,7 @@
 *.keystore
 *.sw*
 platforms/^.*
+*.DS_Store
 =======
 lib-cov
 *.seed
