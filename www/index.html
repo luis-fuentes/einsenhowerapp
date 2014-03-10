@@ -8,16 +8,36 @@
         <link href="css/ionic.css" rel="stylesheet">
 
         <script src="js/ionic.bundle.js"></script>
+        <script src="js/app.js"></script>
 
         <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
         <script src="cordova.js"></script>
     </head>
-    <body>
+    <body ng-app="todo" ng-controller="TodoCtrl">
       <ion-side-menus>
+
+      <!-- Center content -->
         <ion-pane ion-side-menu-content>
+          <header class="bar bar-header bar-dark">
+            <h1 class="title">Todo</h1>
+          </header>
+          <ion-content has-header="true">
+            <!-- our list and list items -->
+            <ion-list>
+              <ion-item ng-repeat="task in tasks">
+                {{task.title}}
+              </ion-item>
+            </ion-list>
+          </ion-content>
         </ion-pane>
+
+        <!-- Left menu -->
         <ion-side-menu side="left">
+          <header class="bar bar-header bar-dark">
+            <h1 class="title">Projects</h1>
+          </header>
         </ion-side-menu>
+
       </ion-side-menus>
     </body>
 </html>
